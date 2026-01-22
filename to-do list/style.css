@@ -1,0 +1,129 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 30px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* ===== Title ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* ===== Input Row ===== */
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.input-row input::placeholder {
+    color: #cfcfe8;
+}
+
+.input-row input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.4);
+}
+
+/* ===== Add Button ===== */
+#addBtn {
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ff4b5c;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+#addBtn:hover {
+    background: #ff6b7a;
+    transform: translateY(-2px);
+}
+
+#addBtn:active {
+    transform: scale(0.95);
+}
+
+/* ===== Task List ===== */
+#taskList {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#taskList li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+#taskList li:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
+/* ===== Completed Task ===== */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+    background: #ff4b5c;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.85rem;
+    transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #ff6b7a;
+}

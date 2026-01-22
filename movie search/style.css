@@ -1,0 +1,120 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 30px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+/* ===== Title ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+select {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+    min-width: 180px;
+}
+
+select:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.4);
+}
+
+/* ===== Results Grid ===== */
+#results {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* ===== Movie Card ===== */
+.movie-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.movie-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Movie Poster */
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Movie Title */
+.movie-card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+/* Genre Tag */
+.movie-card p {
+    font-size: 0.85rem;
+    color: #cfcfe8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    select {
+        min-width: 140px;
+    }
+}
